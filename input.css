@@ -1,0 +1,52 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+nav {
+    @apply text-center p-6;
+}
+nav #toggle {
+    @apply inline-block text-2xl md:hidden;
+}
+nav ul {
+    @apply bg-black absolute left-0 top-0 text-white w-[35vw] h-full p-10 md:p-0 md:bg-transparent md:block md:static md:w-auto md:h-auto md:text-black transition-all duration-300 md:transition-none;
+}
+nav .close {
+    @apply text-2xl md:hidden;
+}
+nav ul li {
+    @apply md:inline-block;
+}
+nav ul li a {
+    @apply uppercase block p-3 mx-2;
+}
+
+.promo {
+    @apply bg-green-400 text-black text-center w-48 h-48 rounded-full flex justify-center items-center flex-col font-extrabold mb-6 mx-auto md:mr-auto md:ml-0;
+}
+.promo p:nth-of-type(1) {
+    @apply text-6xl mb-3;
+}
+.promo p:nth-of-type(2) {
+    @apply uppercase;
+}
+
+.item {
+    @apply w-full md:w-[48%] lg:w-[32%] h-80 rounded-3xl relative overflow-hidden object-cover;
+}
+.item img {
+    @apply h-full w-full absolute top-0 left-0 object-cover;
+}
+.item p {
+    @apply absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 uppercase font-extrabold text-lg text-center;
+}
+
+.price {
+    @apply text-6xl font-extrabold mb-4;
+}
+.meal-title {
+    @apply text-xl uppercase font-bold mb-4;
+}
+p {
+    line-height: 1.7rem;
+}
